@@ -117,8 +117,9 @@ a {
 
 .populaires-cards .card-rating {
     margin-bottom: 5px;
+    display: flex;
+    flex-wrap: wrap;
 }
-
 /* HEADER */
 .header {
     width: 100%;
@@ -762,6 +763,7 @@ a {
     }
 }
 
+/* tablet & telephone */
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
         flex-direction: column;

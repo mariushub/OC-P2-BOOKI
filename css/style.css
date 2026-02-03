@@ -219,11 +219,16 @@ a {
     height: 100%;
     aspect-ratio: 1/1;
     background-color: var(--main-bg-color);
+    color: black;
     border-radius: 10px 0px 0px 10px;
     border: 0px;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.searchbar__icon i {
+    color: black;
 }
 
 .searchbar__icon {
@@ -662,6 +667,10 @@ a {
         aspect-ratio: 1/1;
         border: 0px;
         border-radius: 10px;
+    }
+
+    .searchbar__btnIcon i {
+        color: white;
     }
 
     .filterBar {

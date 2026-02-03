@@ -459,7 +459,7 @@ a {
 }
 
 .hebergements__card__title {
-    font-size: 16px;
+    font-size: 15px;
     font-weight: bold;
 }
 
@@ -537,11 +537,15 @@ a {
     height: 20px;
     display: flex;
     justify-content: start;
-    padding: 27px 20px 20px 20px;
+    padding: 26px 0px 0px 19px;
     align-items: center;
     font-size: 16px;
     font-weight: bold;
-    word-break: break-all;
+    word-break: break-word;
+}
+
+.activity__card__title br {
+    display: none;
 }
 
 /* footer */
@@ -690,6 +694,9 @@ a {
 
     .filterBar__card {
         width: 46% !important;
+        display: flex;
+        justify-content: start;
+        align-items: center;
     }
 
     .filterBar__text {

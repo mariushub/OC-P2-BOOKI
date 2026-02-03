@@ -20,8 +20,8 @@
                 <img class="header__logo" src="./images/logo/Booki.png" alt="">
             </a>
             <nav class="header__nav">
-                <a class="header__link" href="/hebergements">Hébergements</a>
-                <a class="header__link" href="/activites">Activités</a>
+                <a class="header__link" href="#hebergements-and-populaires">Hébergements</a>
+                <a class="header__link" href="#activity">Activités</a>
             </nav>
         </header>
         <main class="main">
@@ -33,24 +33,27 @@
                     <h3 class="headline__subTitle">En plein centre-ville ou en pleine nature</h3>
                 </div>
                 <!-- searchbar -->
-                <div class="searchbar">
-                    <div class="searchbar__icon">
-                        <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M6.13594 17.5955C4.23281 15.3326 0 9.84814 0 6.76751C0 3.02987 3.13396 0 7 0C10.8646 0 14 3.02987 14 6.76751C14 9.84814 9.73438 15.3326 7.86406 17.5955C7.41562 18.1348 6.58437 18.1348 6.13594 17.5955ZM7 9.02335C8.28698 9.02335 9.33333 8.01175 9.33333 6.76751C9.33333 5.52328 8.28698 4.51168 7 4.51168C5.71302 4.51168 4.66667 5.52328 4.66667 6.76751C4.66667 8.01175 5.71302 9.02335 7 9.02335Z"
-                                fill="black" />
-                        </svg>
+                 <form id="searchbar-form" action="submit">
+                    <div class="searchbar">
+                        <div class="searchbar__icon">
+                            <svg width="14" height="18" viewBox="0 0 14 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M6.13594 17.5955C4.23281 15.3326 0 9.84814 0 6.76751C0 3.02987 3.13396 0 7 0C10.8646 0 14 3.02987 14 6.76751C14 9.84814 9.73438 15.3326 7.86406 17.5955C7.41562 18.1348 6.58437 18.1348 6.13594 17.5955ZM7 9.02335C8.28698 9.02335 9.33333 8.01175 9.33333 6.76751C9.33333 5.52328 8.28698 4.51168 7 4.51168C5.71302 4.51168 4.66667 5.52328 4.66667 6.76751C4.66667 8.01175 5.71302 9.02335 7 9.02335Z"
+                                    fill="black" />
+                            </svg>
+                        </div>
+                        <input class="searchbar__input" type="text" name="searchbar" id="searchbar" placeholder="Marseille, France">
+                        <button class="searchbar__btn">Rechercher</button>
+                        <button class="searchbar__btnIcon">
+                            <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16.7688 14.6976L13.4582 11.3876C13.3088 11.2382 13.1062 11.1552 12.8937 11.1552H12.3525C13.2689 9.9832 13.8135 8.50913 13.8135 6.90558C13.8135 3.09091 10.7221 0 6.90676 0C3.09144 0 0 3.09091 0 6.90558C0 10.7202 3.09144 13.8112 6.90676 13.8112C8.51058 13.8112 9.98491 13.2667 11.1571 12.3504V12.8915C11.1571 13.104 11.2401 13.3065 11.3895 13.4559L14.7001 16.7659C15.0122 17.078 15.517 17.078 15.8258 16.7659L16.7655 15.8264C17.0776 15.5143 17.0776 15.0097 16.7688 14.6976ZM6.90676 11.1552C4.55912 11.1552 2.65644 9.25613 2.65644 6.90558C2.65644 4.55834 4.5558 2.65599 6.90676 2.65599C9.25439 2.65599 11.1571 4.55502 11.1571 6.90558C11.1571 9.25281 9.25771 11.1552 6.90676 11.1552Z"
+                                    fill="white" />
+                            </svg>
+                        </button>
                     </div>
-                    <input class="searchbar__input" type="text" name="searchbar" id="searchbar" placeholder="Marseille, France">
-                    <button class="searchbar__btn">Rechercher</button>
-                    <button class="searchbar__btnIcon">
-                        <svg width="17" height="17" viewBox="0 0 17 17" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path
-                                d="M16.7688 14.6976L13.4582 11.3876C13.3088 11.2382 13.1062 11.1552 12.8937 11.1552H12.3525C13.2689 9.9832 13.8135 8.50913 13.8135 6.90558C13.8135 3.09091 10.7221 0 6.90676 0C3.09144 0 0 3.09091 0 6.90558C0 10.7202 3.09144 13.8112 6.90676 13.8112C8.51058 13.8112 9.98491 13.2667 11.1571 12.3504V12.8915C11.1571 13.104 11.2401 13.3065 11.3895 13.4559L14.7001 16.7659C15.0122 17.078 15.517 17.078 15.8258 16.7659L16.7655 15.8264C17.0776 15.5143 17.0776 15.0097 16.7688 14.6976ZM6.90676 11.1552C4.55912 11.1552 2.65644 9.25613 2.65644 6.90558C2.65644 4.55834 4.5558 2.65599 6.90676 2.65599C9.25439 2.65599 11.1571 4.55502 11.1571 6.90558C11.1571 9.25281 9.25771 11.1552 6.90676 11.1552Z"
-                                fill="white" />
-                        </svg>
-                    </button>
-                </div>
+                 </form>
+                
                 <!-- filterbar -->
                 <div class="filterBar" id="filterBar">
                     <span class="filterBar__text">Filtres</span>
@@ -104,14 +107,14 @@
                 </div>
             </section>
             <!-- hebergement & populaire -->
-            <div class="hebergements-and-populaires">
+            <div class="hebergements-and-populaires" id="hebergements-and-populaires">
                 <!-- hebergement -->
                 <section class="hebergements">
                     <h2 class="hebergements__title">Hébergements à Marseille</h2>
                     <div class="hebergements__row">
-                        <a class="hebergements__link" href="/hebergements?hebergement=hotel-du-port">
+                        <a class="hebergements__link" href="#">
                             <article class="hebergements__card">
-                                <img class="hebergements__card__img" src="/images/hebergements/fred-kleber.jpg"
+                                <img class="hebergements__card__img" src="./images/hebergements/fred-kleber.jpg"
                                     alt="Hôtel du port">
                                 <div class="hebergements__card__box">
                                     <h3 class="hebergements__card__title">Hôtel du port</h3>
@@ -151,9 +154,9 @@
                                 </div>
                             </article>
                         </a>
-                        <a class="hebergements__link" href="/hebergements?hebergement=hotel-chez-amina">
+                        <a class="hebergements__link" href="#">
                             <article class="hebergements__card">
-                                <img class="hebergements__card__img" src="/images/hebergements/febrian-zakaria.jpg"
+                                <img class="hebergements__card__img" src="./images/hebergements/febrian-zakaria.jpg"
                                     alt="Hôtel Chez Amina">
                                 <div class="hebergements__card__box">
                                     <h3 class="hebergements__card__title">Hôtel Chez Amina</h3>
@@ -193,9 +196,9 @@
                                 </div>
                             </article>
                         </a>
-                        <a class="hebergements__link" href="/hebergements?hebergement=hotel-chez-amina">
+                        <a class="hebergements__link" href="#">
                             <article class="hebergements__card">
-                                <img class="hebergements__card__img" src="/images/hebergements/reisetopia.jpg"
+                                <img class="hebergements__card__img" src="./images/hebergements/reisetopia.jpg"
                                     alt="Hôtel Les mouettes">
                                 <div class="hebergements__card__box">
                                     <h3 class="hebergements__card__title">Hôtel Les mouettes</h3>
@@ -237,9 +240,9 @@
                         </a>
                     </div>
                     <div class="hebergements__row">
-                        <a class="hebergements__link" href="/hebergements?hebergement=hotel-de-la-mer">
+                        <a class="hebergements__link" href="#">
                             <article class="hebergements__card">
-                                <img class="hebergements__card__img" src="/images/hebergements/annie-spratt.jpg"
+                                <img class="hebergements__card__img" src="./images/hebergements/annie-spratt.jpg"
                                     alt="Hôtel de la mer">
                                 <div class="hebergements__card__box">
                                     <h3 class="hebergements__card__title">Hôtel de la mer</h3>
@@ -279,9 +282,9 @@
                                 </div>
                             </article>
                         </a>
-                        <a class="hebergements__link" href="/hebergements?hebergement=auberge-La-canebiere">
+                        <a class="hebergements__link" href="#">
                             <article class="hebergements__card">
-                                <img class="hebergements__card__img" src="/images/hebergements/marcus-loke.jpg"
+                                <img class="hebergements__card__img" src="./images/hebergements/marcus-loke.jpg"
                                     alt="Auberge La Canebière">
                                 <div class="hebergements__card__box">
                                     <h3 class="hebergements__card__title">Auberge La Canebière</h3>
@@ -321,9 +324,9 @@
                                 </div>
                             </article>
                         </a>
-                        <a class="hebergements__link" href="/hebergements?hebergement=auberge-le-panier">
+                        <a class="hebergements__link" href="#">
                             <article class="hebergements__card">
-                                <img class="hebergements__card__img" src="/images/hebergements/nicate-lee.jpg"
+                                <img class="hebergements__card__img" src="./images/hebergements/nicate-lee.jpg"
                                     alt="Auberge Le Panier">
                                 <div class="hebergements__card__box">
                                     <h3 class="hebergements__card__title">Auberge Le Panier</h3>
@@ -437,30 +440,30 @@
                 </section>
             </div>
             <!-- activty -->
-            <section class="activity">
+            <section id="activity" class="activity">
                 <h2 class="activity__title">Activités à Marseille</h2>
                 <div class="activity__box">
-                    <a class="activity__link" href="/activites?activte=vieux-port">
+                    <a class="activity__link" href="#">
                         <article class="activity__card">
-                            <img class="activity__card__img" src="/images/activites/reno-laithienne.jpg" alt="">
+                            <img class="activity__card__img" src="./images/activites/reno-laithienne.jpg" alt="">
                             <h3 class="activity__card__title">Vieux Port</h3>
                         </article>
                     </a>
-                    <a class="activity__link" href="/activites?activte=fort-de-pomegues">
+                    <a class="activity__link" href="#">
                         <article class="activity__card">
-                            <img class="activity__card__img" src="/images/activites/paul-hermann.jpg" alt="">
+                            <img class="activity__card__img" src="./images/activites/paul-hermann.jpg" alt="">
                             <h3 class="activity__card__title">Fort de Pomègues</h3>
                         </article>
                     </a>
-                    <a class="activity__link" href="/activites?activte=parc-national-des-calanques">
+                    <a class="activity__link" href="#">
                         <article class="activity__card">
-                            <img class="activity__card__img" src="/images/activites/kilyan-sockalingum.jpg" alt="">
+                            <img class="activity__card__img" src="./images/activites/kilyan-sockalingum.jpg" alt="">
                             <h3 class="activity__card__title">Parc National des Calanques</h3>
                         </article>
                     </a>
-                    <a class="activity__link" href="/activites?activte=notre-dame-de-la-garde">
+                    <a class="activity__link" href="#">
                         <article class="activity__card">
-                            <img class="activity__card__img" src="/images/activites/florian-wehde.jpg" alt="">
+                            <img class="activity__card__img" src="./images/activites/florian-wehde.jpg" alt="">
                             <h3 class="activity__card__title">Notre-Dame-de-la-Garde</h3>
                         </article>
                     </a>
